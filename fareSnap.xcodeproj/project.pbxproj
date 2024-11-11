@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB5709882CE29E6700428A9B /* fareSnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709872CE29E6700428A9B /* fareSnapApp.swift */; };
+		CB57098A2CE29E6700428A9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709892CE29E6700428A9B /* ContentView.swift */; };
+		CB57098C2CE29E6700428A9B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57098B2CE29E6700428A9B /* Item.swift */; };
+		CB57098E2CE29E6700428A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57098D2CE29E6700428A9B /* Assets.xcassets */; };
+		CB5709912CE29E6700428A9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5709902CE29E6700428A9B /* Preview Assets.xcassets */; };
+		CB57099B2CE29E6800428A9B /* fareSnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57099A2CE29E6800428A9B /* fareSnapTests.swift */; };
+		CB5709A52CE29E6800428A9B /* fareSnapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709A42CE29E6800428A9B /* fareSnapUITests.swift */; };
+		CB5709A72CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709A62CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift */; };
+		CB5709B52CE29E9900428A9B /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = CB5709B42CE29E9900428A9B /* GoogleMaps */; };
+		CB9EACA12CE2A13700BBB7AE /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */; };
+		CB9EACA32CE2A55B00BBB7AE /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB5709972CE29E6800428A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB57097C2CE29E6700428A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB5709832CE29E6700428A9B;
+			remoteInfo = fareSnap;
+		};
+		CB5709A12CE29E6800428A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB57097C2CE29E6700428A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB5709832CE29E6700428A9B;
+			remoteInfo = fareSnap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB5709842CE29E6700428A9B /* fareSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fareSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5709872CE29E6700428A9B /* fareSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapApp.swift; sourceTree = "<group>"; };
+		CB5709892CE29E6700428A9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB57098B2CE29E6700428A9B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CB57098D2CE29E6700428A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB5709902CE29E6700428A9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB5709962CE29E6800428A9B /* fareSnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fareSnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB57099A2CE29E6800428A9B /* fareSnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapTests.swift; sourceTree = "<group>"; };
+		CB5709A02CE29E6800428A9B /* fareSnapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fareSnapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5709A42CE29E6800428A9B /* fareSnapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapUITests.swift; sourceTree = "<group>"; };
+		CB5709A62CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+		CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB5709812CE29E6700428A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5709B52CE29E9900428A9B /* GoogleMaps in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5709932CE29E6800428A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB57099D2CE29E6800428A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB57097B2CE29E6700428A9B = {
+			isa = PBXGroup;
+			children = (
+				CB5709862CE29E6700428A9B /* fareSnap */,
+				CB5709992CE29E6800428A9B /* fareSnapTests */,
+				CB5709A32CE29E6800428A9B /* fareSnapUITests */,
+				CB5709852CE29E6700428A9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB5709852CE29E6700428A9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB5709842CE29E6700428A9B /* fareSnap.app */,
+				CB5709962CE29E6800428A9B /* fareSnapTests.xctest */,
+				CB5709A02CE29E6800428A9B /* fareSnapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB5709862CE29E6700428A9B /* fareSnap */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */,
+				CB5709872CE29E6700428A9B /* fareSnapApp.swift */,
+				CB5709892CE29E6700428A9B /* ContentView.swift */,
+				CB57098B2CE29E6700428A9B /* Item.swift */,
+				CB57098D2CE29E6700428A9B /* Assets.xcassets */,
+				CB57098F2CE29E6700428A9B /* Preview Content */,
+				CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */,
+			);
+			path = fareSnap;
+			sourceTree = "<group>";
+		};
+		CB57098F2CE29E6700428A9B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB5709902CE29E6700428A9B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB5709992CE29E6800428A9B /* fareSnapTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB57099A2CE29E6800428A9B /* fareSnapTests.swift */,
+			);
+			path = fareSnapTests;
+			sourceTree = "<group>";
+		};
+		CB5709A32CE29E6800428A9B /* fareSnapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB5709A42CE29E6800428A9B /* fareSnapUITests.swift */,
+				CB5709A62CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift */,
+			);
+			path = fareSnapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB5709832CE29E6700428A9B /* fareSnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5709AA2CE29E6800428A9B /* Build configuration list for PBXNativeTarget "fareSnap" */;
+			buildPhases = (
+				CB5709802CE29E6700428A9B /* Sources */,
+				CB5709812CE29E6700428A9B /* Frameworks */,
+				CB5709822CE29E6700428A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fareSnap;
+			packageProductDependencies = (
+				CB5709B42CE29E9900428A9B /* GoogleMaps */,
+			);
+			productName = fareSnap;
+			productReference = CB5709842CE29E6700428A9B /* fareSnap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB5709952CE29E6800428A9B /* fareSnapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5709AD2CE29E6800428A9B /* Build configuration list for PBXNativeTarget "fareSnapTests" */;
+			buildPhases = (
+				CB5709922CE29E6800428A9B /* Sources */,
+				CB5709932CE29E6800428A9B /* Frameworks */,
+				CB5709942CE29E6800428A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB5709982CE29E6800428A9B /* PBXTargetDependency */,
+			);
+			name = fareSnapTests;
+			productName = fareSnapTests;
+			productReference = CB5709962CE29E6800428A9B /* fareSnapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB57099F2CE29E6800428A9B /* fareSnapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5709B02CE29E6800428A9B /* Build configuration list for PBXNativeTarget "fareSnapUITests" */;
+			buildPhases = (
+				CB57099C2CE29E6800428A9B /* Sources */,
+				CB57099D2CE29E6800428A9B /* Frameworks */,
+				CB57099E2CE29E6800428A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB5709A22CE29E6800428A9B /* PBXTargetDependency */,
+			);
+			name = fareSnapUITests;
+			productName = fareSnapUITests;
+			productReference = CB5709A02CE29E6800428A9B /* fareSnapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB57097C2CE29E6700428A9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CB5709832CE29E6700428A9B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					CB5709952CE29E6800428A9B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CB5709832CE29E6700428A9B;
+					};
+					CB57099F2CE29E6800428A9B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CB5709832CE29E6700428A9B;
+					};
+				};
+			};
+			buildConfigurationList = CB57097F2CE29E6700428A9B /* Build configuration list for PBXProject "fareSnap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB57097B2CE29E6700428A9B;
+			packageReferences = (
+				CB5709B32CE29E9900428A9B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
+			productRefGroup = CB5709852CE29E6700428A9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB5709832CE29E6700428A9B /* fareSnap */,
+				CB5709952CE29E6800428A9B /* fareSnapTests */,
+				CB57099F2CE29E6800428A9B /* fareSnapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB5709822CE29E6700428A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EACA32CE2A55B00BBB7AE /* APIKeys.plist in Resources */,
+				CB5709912CE29E6700428A9B /* Preview Assets.xcassets in Resources */,
+				CB57098E2CE29E6700428A9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5709942CE29E6800428A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB57099E2CE29E6800428A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB5709802CE29E6700428A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EACA12CE2A13700BBB7AE /* GoogleMapView.swift in Sources */,
+				CB57098A2CE29E6700428A9B /* ContentView.swift in Sources */,
+				CB57098C2CE29E6700428A9B /* Item.swift in Sources */,
+				CB5709882CE29E6700428A9B /* fareSnapApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5709922CE29E6800428A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB57099B2CE29E6800428A9B /* fareSnapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB57099C2CE29E6800428A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5709A72CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift in Sources */,
+				CB5709A52CE29E6800428A9B /* fareSnapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB5709982CE29E6800428A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB5709832CE29E6700428A9B /* fareSnap */;
+			targetProxy = CB5709972CE29E6800428A9B /* PBXContainerItemProxy */;
+		};
+		CB5709A22CE29E6800428A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB5709832CE29E6700428A9B /* fareSnap */;
+			targetProxy = CB5709A12CE29E6800428A9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB5709A82CE29E6800428A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB5709A92CE29E6800428A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB5709AB2CE29E6800428A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fareSnap/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.fareSnap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB5709AC2CE29E6800428A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fareSnap/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.fareSnap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB5709AE2CE29E6800428A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.fareSnapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fareSnap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fareSnap";
+			};
+			name = Debug;
+		};
+		CB5709AF2CE29E6800428A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.fareSnapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fareSnap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fareSnap";
+			};
+			name = Release;
+		};
+		CB5709B12CE29E6800428A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.fareSnapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fareSnap;
+			};
+			name = Debug;
+		};
+		CB5709B22CE29E6800428A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.fareSnapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fareSnap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB57097F2CE29E6700428A9B /* Build configuration list for PBXProject "fareSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5709A82CE29E6800428A9B /* Debug */,
+				CB5709A92CE29E6800428A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB5709AA2CE29E6800428A9B /* Build configuration list for PBXNativeTarget "fareSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5709AB2CE29E6800428A9B /* Debug */,
+				CB5709AC2CE29E6800428A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB5709AD2CE29E6800428A9B /* Build configuration list for PBXNativeTarget "fareSnapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5709AE2CE29E6800428A9B /* Debug */,
+				CB5709AF2CE29E6800428A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB5709B02CE29E6800428A9B /* Build configuration list for PBXNativeTarget "fareSnapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5709B12CE29E6800428A9B /* Debug */,
+				CB5709B22CE29E6800428A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB5709B32CE29E9900428A9B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 9.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB5709B42CE29E9900428A9B /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB5709B32CE29E9900428A9B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CB57097C2CE29E6700428A9B /* Project object */;
+}

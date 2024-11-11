@@ -1,0 +1,62 @@
+APIKeys/
+fareSnap/APIKeys.plist
+
+# Xcode
+# User-specific files
+*.xcuserdata/
+*.moved-aside
+*.swp
+*.swo
+
+# Build products
+build/
+DerivedData/
+*.xcworkspace
+*.xcodeproj/project.xcuserstate
+*.xcodeproj/xcuserdata
+
+# Swift Package Manager
+/.build/
+Packages/
+.xcproject/project.xcworkspace/
+.xcworkspace/
+SwiftPackageManager/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Code Coverage
+*.xccoverage
+
+# xcconfig files
+*.xcconfig
+
+# iOS Device and Simulator Build Data
+ios-build/
+
+# Temporary Files
+*.tmp
+*.swp
+*.swo
+
+# App Data & Settings
+*.log
+*.DS_Store
+
+# Xcode Cloud
+.xcode-cloud/
+
+# Documentation & Generated Files
+docsets/
+*.hmap
+
+# Swift UI Previews
+*.preview/
+
+# Other Files
+*.ipa
+*.app
