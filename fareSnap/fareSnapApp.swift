@@ -10,6 +10,10 @@ import SwiftData
 
 @main
 struct fareSnapApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+    
     var sharedModelContainer: ModelContainer = {
         
         if let apiKeys = loadAPIKeys() {

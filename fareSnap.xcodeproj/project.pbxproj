@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B351392A8A40E665A5929BE /* Pods_fareSnapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C118DD324B3C0C009DE9AEEA /* Pods_fareSnapTests.framework */; };
+		A4C7DFFAE3147695255EA600 /* Pods_fareSnap_fareSnapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70DEB56BCB51C5F5822C022 /* Pods_fareSnap_fareSnapUITests.framework */; };
 		CB5709882CE29E6700428A9B /* fareSnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709872CE29E6700428A9B /* fareSnapApp.swift */; };
 		CB57098A2CE29E6700428A9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709892CE29E6700428A9B /* ContentView.swift */; };
 		CB57098C2CE29E6700428A9B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57098B2CE29E6700428A9B /* Item.swift */; };
@@ -15,10 +17,11 @@
 		CB57099B2CE29E6800428A9B /* fareSnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57099A2CE29E6800428A9B /* fareSnapTests.swift */; };
 		CB5709A52CE29E6800428A9B /* fareSnapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709A42CE29E6800428A9B /* fareSnapUITests.swift */; };
 		CB5709A72CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709A62CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift */; };
-		CB5709B52CE29E9900428A9B /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = CB5709B42CE29E9900428A9B /* GoogleMaps */; };
 		CB9EACA12CE2A13700BBB7AE /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */; };
 		CB9EACA32CE2A55B00BBB7AE /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */; };
 		CBB35A0F2CFE9B47008E67EB /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB35A0E2CFE9B47008E67EB /* SheetView.swift */; };
+		CBB35A112CFEA6F9008E67EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB35A102CFEA6F9008E67EB /* AppDelegate.swift */; };
+		CE345BC49654E68671CD1683 /* Pods_fareSnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEB9FF542598A5D31E138B6 /* Pods_fareSnap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02CCD9ABF0D8AFE19C23750D /* Pods-fareSnap-fareSnapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fareSnap-fareSnapUITests.release.xcconfig"; path = "Target Support Files/Pods-fareSnap-fareSnapUITests/Pods-fareSnap-fareSnapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6DEB9FF542598A5D31E138B6 /* Pods_fareSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fareSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71688E54441C70C5DA22E3A2 /* Pods-fareSnap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fareSnap.release.xcconfig"; path = "Target Support Files/Pods-fareSnap/Pods-fareSnap.release.xcconfig"; sourceTree = "<group>"; };
+		78CF4EB494B9F33F66B1520E /* Pods-fareSnapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fareSnapTests.debug.xcconfig"; path = "Target Support Files/Pods-fareSnapTests/Pods-fareSnapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95EC2F37C194866342AFDB08 /* Pods-fareSnapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fareSnapTests.release.xcconfig"; path = "Target Support Files/Pods-fareSnapTests/Pods-fareSnapTests.release.xcconfig"; sourceTree = "<group>"; };
+		C118DD324B3C0C009DE9AEEA /* Pods_fareSnapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fareSnapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5709842CE29E6700428A9B /* fareSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fareSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5709872CE29E6700428A9B /* fareSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapApp.swift; sourceTree = "<group>"; };
 		CB5709892CE29E6700428A9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +62,10 @@
 		CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
 		CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		CBB35A0E2CFE9B47008E67EB /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		CBB35A102CFEA6F9008E67EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D70DEB56BCB51C5F5822C022 /* Pods_fareSnap_fareSnapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fareSnap_fareSnapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0846C59E7CA28802922A84 /* Pods-fareSnap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fareSnap.debug.xcconfig"; path = "Target Support Files/Pods-fareSnap/Pods-fareSnap.debug.xcconfig"; sourceTree = "<group>"; };
+		EA9FC8EC50F1626EA6301C7C /* Pods-fareSnap-fareSnapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fareSnap-fareSnapUITests.debug.xcconfig"; path = "Target Support Files/Pods-fareSnap-fareSnapUITests/Pods-fareSnap-fareSnapUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5709B52CE29E9900428A9B /* GoogleMaps in Frameworks */,
+				CE345BC49654E68671CD1683 /* Pods_fareSnap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B351392A8A40E665A5929BE /* Pods_fareSnapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +89,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C7DFFAE3147695255EA600 /* Pods_fareSnap_fareSnapUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		159B60DCC466BF389B2EC426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DEB9FF542598A5D31E138B6 /* Pods_fareSnap.framework */,
+				D70DEB56BCB51C5F5822C022 /* Pods_fareSnap_fareSnapUITests.framework */,
+				C118DD324B3C0C009DE9AEEA /* Pods_fareSnapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		630EC1EB5B41CB5B467C03B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF0846C59E7CA28802922A84 /* Pods-fareSnap.debug.xcconfig */,
+				71688E54441C70C5DA22E3A2 /* Pods-fareSnap.release.xcconfig */,
+				EA9FC8EC50F1626EA6301C7C /* Pods-fareSnap-fareSnapUITests.debug.xcconfig */,
+				02CCD9ABF0D8AFE19C23750D /* Pods-fareSnap-fareSnapUITests.release.xcconfig */,
+				78CF4EB494B9F33F66B1520E /* Pods-fareSnapTests.debug.xcconfig */,
+				95EC2F37C194866342AFDB08 /* Pods-fareSnapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CB57097B2CE29E6700428A9B = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +126,8 @@
 				CB5709992CE29E6800428A9B /* fareSnapTests */,
 				CB5709A32CE29E6800428A9B /* fareSnapUITests */,
 				CB5709852CE29E6700428A9B /* Products */,
+				630EC1EB5B41CB5B467C03B4 /* Pods */,
+				159B60DCC466BF389B2EC426 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +152,7 @@
 				CB57098D2CE29E6700428A9B /* Assets.xcassets */,
 				CB57098F2CE29E6700428A9B /* Preview Content */,
 				CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */,
+				CBB35A102CFEA6F9008E67EB /* AppDelegate.swift */,
 			);
 			path = fareSnap;
 			sourceTree = "<group>";
@@ -156,18 +197,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5709AA2CE29E6800428A9B /* Build configuration list for PBXNativeTarget "fareSnap" */;
 			buildPhases = (
+				C7676C628E6905C166044887 /* [CP] Check Pods Manifest.lock */,
 				CB5709802CE29E6700428A9B /* Sources */,
 				CB5709812CE29E6700428A9B /* Frameworks */,
 				CB5709822CE29E6700428A9B /* Resources */,
+				253B1F9E2DB8182DFE168881 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = fareSnap;
-			packageProductDependencies = (
-				CB5709B42CE29E9900428A9B /* GoogleMaps */,
-			);
 			productName = fareSnap;
 			productReference = CB5709842CE29E6700428A9B /* fareSnap.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5709AD2CE29E6800428A9B /* Build configuration list for PBXNativeTarget "fareSnapTests" */;
 			buildPhases = (
+				07097910E611A6F301B7BED0 /* [CP] Check Pods Manifest.lock */,
 				CB5709922CE29E6800428A9B /* Sources */,
 				CB5709932CE29E6800428A9B /* Frameworks */,
 				CB5709942CE29E6800428A9B /* Resources */,
@@ -194,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5709B02CE29E6800428A9B /* Build configuration list for PBXNativeTarget "fareSnapUITests" */;
 			buildPhases = (
+				658FCE58EA8DD33C4E4BE5FB /* [CP] Check Pods Manifest.lock */,
 				CB57099C2CE29E6800428A9B /* Sources */,
 				CB57099D2CE29E6800428A9B /* Frameworks */,
 				CB57099E2CE29E6800428A9B /* Resources */,
+				B54D3B93F1177F78DB55D215 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,9 +283,6 @@
 				Base,
 			);
 			mainGroup = CB57097B2CE29E6700428A9B;
-			packageReferences = (
-				CB5709B32CE29E9900428A9B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
-			);
 			productRefGroup = CB5709852CE29E6700428A9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,11 +321,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07097910E611A6F301B7BED0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fareSnapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		253B1F9E2DB8182DFE168881 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fareSnap/Pods-fareSnap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fareSnap/Pods-fareSnap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fareSnap/Pods-fareSnap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		658FCE58EA8DD33C4E4BE5FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fareSnap-fareSnapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54D3B93F1177F78DB55D215 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fareSnap-fareSnapUITests/Pods-fareSnap-fareSnapUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fareSnap-fareSnapUITests/Pods-fareSnap-fareSnapUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fareSnap-fareSnapUITests/Pods-fareSnap-fareSnapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7676C628E6905C166044887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fareSnap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB5709802CE29E6700428A9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB35A112CFEA6F9008E67EB /* AppDelegate.swift in Sources */,
 				CB9EACA12CE2A13700BBB7AE /* GoogleMapView.swift in Sources */,
 				CB57098A2CE29E6700428A9B /* ContentView.swift in Sources */,
 				CBB35A0F2CFE9B47008E67EB /* SheetView.swift in Sources */,
@@ -448,6 +592,7 @@
 		};
 		CB5709AB2CE29E6800428A9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF0846C59E7CA28802922A84 /* Pods-fareSnap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +601,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"fareSnap/Preview Content\"";
 				DEVELOPMENT_TEAM = ZTBH29ZRG3;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show the map";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show the map";
@@ -465,6 +611,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,6 +627,7 @@
 		};
 		CB5709AC2CE29E6800428A9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71688E54441C70C5DA22E3A2 /* Pods-fareSnap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +636,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"fareSnap/Preview Content\"";
 				DEVELOPMENT_TEAM = ZTBH29ZRG3;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show the map";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show the map";
@@ -497,6 +646,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,6 +662,7 @@
 		};
 		CB5709AE2CE29E6800428A9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CF4EB494B9F33F66B1520E /* Pods-fareSnapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +683,7 @@
 		};
 		CB5709AF2CE29E6800428A9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95EC2F37C194866342AFDB08 /* Pods-fareSnapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +704,7 @@
 		};
 		CB5709B12CE29E6800428A9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA9FC8EC50F1626EA6301C7C /* Pods-fareSnap-fareSnapUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,6 +723,7 @@
 		};
 		CB5709B22CE29E6800428A9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02CCD9ABF0D8AFE19C23750D /* Pods-fareSnap-fareSnapUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -626,25 +780,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CB5709B32CE29E9900428A9B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 9.1.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CB5709B42CE29E9900428A9B /* GoogleMaps */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB5709B32CE29E9900428A9B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
-			productName = GoogleMaps;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB57097C2CE29E6700428A9B /* Project object */;
 }
