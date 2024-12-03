@@ -445,6 +445,9 @@
 				DEVELOPMENT_TEAM = ZTBH29ZRG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show the map";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show the map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -474,6 +477,9 @@
 				DEVELOPMENT_TEAM = ZTBH29ZRG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show the map";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show the map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

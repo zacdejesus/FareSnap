@@ -7,56 +7,45 @@
 
 import SwiftUI
 import SwiftData
-import GoogleMaps
+import MapKit
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    
+    @State private var region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), // San Francisco, CA
+        span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+    )
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
-        }
+         Map(coordinateRegion: $region)
+             .ignoresSafeArea() // Makes the map occupy the full screen
+     }
+    
+    func convertToMapPoint(coordinate: CLLocationCoordinate2D, region: MKCoordinateRegion, geometry: GeometryProxy) -> CGPoint {
+        let mapRect = MKMapRect(
+            origin: MKMapPoint(region.center),
+            size: MKMapSize(width: region.span.longitudeDelta, height: region.span.latitudeDelta)
+        )
+        
+        let mapPoint = MKMapPoint(coordinate)
+        
+        let x = (mapPoint.x - mapRect.origin.x) / mapRect.size.width * geometry.size.width
+        let y = (mapPoint.y - mapRect.origin.y) / mapRect.size.height * geometry.size.height
+        
+        return CGPoint(x: x, y: y)
     }
+    
+}
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
+struct BottomSheetView: View {
+    var body: some View {
+        Button("") {}
     }
 }
 
+
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

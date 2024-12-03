@@ -60,7 +60,35 @@ struct fareSnapApp: App {
         }
     }()
     
-    
+    func loadAPIKeys() -> [String: String]? {
+        // Look for the file inside the app's main bundle
+
+        
+        if let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            print("Documents directory: \(directory)")
+        }
+        
+        if let path = Bundle.main.resourcePath {
+            print("Resources path: \(path)")
+        }
+        
+        guard let url = Bundle.main.url(forResource: "APIKeys", withExtension: "plist") else {
+            print("Failed to find APIKeys.plist in the bundle")
+            return nil
+        }
+
+        // Read the file data
+        do {
+            let data = try Data(contentsOf: url)
+
+            // If it's a plist file, decode it
+            let apiKeys = try PropertyListDecoder().decode([String: String].self, from: data)
+            return apiKeys
+        } catch {
+            print("Error loading API keys: \(error)")
+            return nil
+        }
+    }
 
     var body: some Scene {
         WindowGroup {
