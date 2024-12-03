@@ -18,6 +18,7 @@
 		CB5709B52CE29E9900428A9B /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = CB5709B42CE29E9900428A9B /* GoogleMaps */; };
 		CB9EACA12CE2A13700BBB7AE /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */; };
 		CB9EACA32CE2A55B00BBB7AE /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */; };
+		CBB35A0F2CFE9B47008E67EB /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB35A0E2CFE9B47008E67EB /* SheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CB5709A62CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
 		CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
+		CBB35A0E2CFE9B47008E67EB /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		CB5709862CE29E6700428A9B /* fareSnap */ = {
 			isa = PBXGroup;
 			children = (
+				CBB35A0D2CFE9B36008E67EB /* views */,
 				CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */,
 				CB5709872CE29E6700428A9B /* fareSnapApp.swift */,
 				CB5709892CE29E6700428A9B /* ContentView.swift */,
@@ -136,6 +139,14 @@
 				CB5709A62CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift */,
 			);
 			path = fareSnapUITests;
+			sourceTree = "<group>";
+		};
+		CBB35A0D2CFE9B36008E67EB /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CBB35A0E2CFE9B47008E67EB /* SheetView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +288,7 @@
 			files = (
 				CB9EACA12CE2A13700BBB7AE /* GoogleMapView.swift in Sources */,
 				CB57098A2CE29E6700428A9B /* ContentView.swift in Sources */,
+				CBB35A0F2CFE9B47008E67EB /* SheetView.swift in Sources */,
 				CB57098C2CE29E6700428A9B /* Item.swift in Sources */,
 				CB5709882CE29E6700428A9B /* fareSnapApp.swift in Sources */,
 			);

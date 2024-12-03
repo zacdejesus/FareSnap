@@ -17,10 +17,27 @@ struct ContentView: View {
         center: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), // San Francisco, CA
         span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     )
+    
+    @State private var cameraPosition = MapCameraPosition.region(MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
+        span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+    ))
+    
+    @State private var showSheet = true
+
 
     var body: some View {
-         Map(coordinateRegion: $region)
-             .ignoresSafeArea() // Makes the map occupy the full screen
+        ZStack {
+            Map(position: $cameraPosition)
+             .ignoresSafeArea()
+
+             // Bottom sheet
+             .sheet(isPresented: $showSheet ) {
+                    SheetView()
+                     .interactiveDismissDisabled(true) 
+                     .presentationDetents([.medium,.height(200)])
+                }
+         }
      }
     
     func convertToMapPoint(coordinate: CLLocationCoordinate2D, region: MKCoordinateRegion, geometry: GeometryProxy) -> CGPoint {
