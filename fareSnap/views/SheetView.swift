@@ -14,21 +14,21 @@ struct SheetView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            Text("Enter Your Details")
+            Text("Enter Your Destination to obtein fares")
                 .font(.headline)
             
-            TextField("First Name", text: $firstName)
+            TextField("your location", text: $firstName)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.horizontal)
             
-            TextField("Last Name", text: $lastName)
+            TextField("where are you going", text: $lastName)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.horizontal)
             
             Button(action: {
                 print("First Name: \(firstName), Last Name: \(lastName)")
             }) {
-                Text("Submit")
+                Text("Get fares")
                     .frame(maxWidth: .infinity)
                     .padding()
                     .background(Color.blue)

@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		7B351392A8A40E665A5929BE /* Pods_fareSnapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C118DD324B3C0C009DE9AEEA /* Pods_fareSnapTests.framework */; };
 		A4C7DFFAE3147695255EA600 /* Pods_fareSnap_fareSnapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70DEB56BCB51C5F5822C022 /* Pods_fareSnap_fareSnapUITests.framework */; };
+		CB3BCACE2D01FA5F009C13FB /* APIKeysManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCACD2D01FA5F009C13FB /* APIKeysManager.swift */; };
+		CB3BCAD12D01FDD1009C13FB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAD02D01FDD1009C13FB /* Item.swift */; };
+		CB3BCAD42D01FFAD009C13FB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAD32D01FFAD009C13FB /* LocationManager.swift */; };
+		CB3BCAD72D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAD62D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift */; };
+		CB3BCADA2D0207FF009C13FB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAD92D0207FF009C13FB /* ContentViewModel.swift */; };
 		CB5709882CE29E6700428A9B /* fareSnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709872CE29E6700428A9B /* fareSnapApp.swift */; };
 		CB57098A2CE29E6700428A9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709892CE29E6700428A9B /* ContentView.swift */; };
-		CB57098C2CE29E6700428A9B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57098B2CE29E6700428A9B /* Item.swift */; };
 		CB57098E2CE29E6700428A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57098D2CE29E6700428A9B /* Assets.xcassets */; };
 		CB5709912CE29E6700428A9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5709902CE29E6700428A9B /* Preview Assets.xcassets */; };
 		CB57099B2CE29E6800428A9B /* fareSnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57099A2CE29E6800428A9B /* fareSnapTests.swift */; };
@@ -48,10 +52,15 @@
 		78CF4EB494B9F33F66B1520E /* Pods-fareSnapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fareSnapTests.debug.xcconfig"; path = "Target Support Files/Pods-fareSnapTests/Pods-fareSnapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		95EC2F37C194866342AFDB08 /* Pods-fareSnapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fareSnapTests.release.xcconfig"; path = "Target Support Files/Pods-fareSnapTests/Pods-fareSnapTests.release.xcconfig"; sourceTree = "<group>"; };
 		C118DD324B3C0C009DE9AEEA /* Pods_fareSnapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fareSnapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3BCACD2D01FA5F009C13FB /* APIKeysManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeysManager.swift; sourceTree = "<group>"; };
+		CB3BCAD02D01FDD1009C13FB /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CB3BCAD22D01FF4F009C13FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CB3BCAD32D01FFAD009C13FB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CB3BCAD62D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+extensions.swift"; sourceTree = "<group>"; };
+		CB3BCAD92D0207FF009C13FB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		CB5709842CE29E6700428A9B /* fareSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fareSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5709872CE29E6700428A9B /* fareSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapApp.swift; sourceTree = "<group>"; };
 		CB5709892CE29E6700428A9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CB57098B2CE29E6700428A9B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CB57098D2CE29E6700428A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB5709902CE29E6700428A9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB5709962CE29E6800428A9B /* fareSnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fareSnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +128,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CB3BCACF2D01FA67009C13FB /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BCACD2D01FA5F009C13FB /* APIKeysManager.swift */,
+				CB3BCAD32D01FFAD009C13FB /* LocationManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		CB3BCAD52D0201CD009C13FB /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BCAD62D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		CB3BCAD82D0207EF009C13FB /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BCAD92D0207FF009C13FB /* ContentViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
 		CB57097B2CE29E6700428A9B = {
 			isa = PBXGroup;
 			children = (
@@ -144,11 +178,15 @@
 		CB5709862CE29E6700428A9B /* fareSnap */ = {
 			isa = PBXGroup;
 			children = (
+				CB3BCAD82D0207EF009C13FB /* viewModels */,
+				CB3BCAD22D01FF4F009C13FB /* Info.plist */,
+				CB3BCAD52D0201CD009C13FB /* extensions */,
+				CB3BCACF2D01FA67009C13FB /* managers */,
 				CBB35A0D2CFE9B36008E67EB /* views */,
 				CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */,
 				CB5709872CE29E6700428A9B /* fareSnapApp.swift */,
 				CB5709892CE29E6700428A9B /* ContentView.swift */,
-				CB57098B2CE29E6700428A9B /* Item.swift */,
+				CB3BCAD02D01FDD1009C13FB /* Item.swift */,
 				CB57098D2CE29E6700428A9B /* Assets.xcassets */,
 				CB57098F2CE29E6700428A9B /* Preview Content */,
 				CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */,
@@ -432,8 +470,12 @@
 				CBB35A112CFEA6F9008E67EB /* AppDelegate.swift in Sources */,
 				CB9EACA12CE2A13700BBB7AE /* GoogleMapView.swift in Sources */,
 				CB57098A2CE29E6700428A9B /* ContentView.swift in Sources */,
+				CB3BCACE2D01FA5F009C13FB /* APIKeysManager.swift in Sources */,
+				CB3BCADA2D0207FF009C13FB /* ContentViewModel.swift in Sources */,
+				CB3BCAD42D01FFAD009C13FB /* LocationManager.swift in Sources */,
+				CB3BCAD12D01FDD1009C13FB /* Item.swift in Sources */,
+				CB3BCAD72D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift in Sources */,
 				CBB35A0F2CFE9B47008E67EB /* SheetView.swift in Sources */,
-				CB57098C2CE29E6700428A9B /* Item.swift in Sources */,
 				CB5709882CE29E6700428A9B /* fareSnapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +645,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fareSnap/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show the map";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show the map";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show the map";
@@ -638,6 +681,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fareSnap/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show the map";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show the map";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show the map";
