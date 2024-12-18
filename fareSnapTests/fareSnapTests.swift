@@ -1,36 +1,63 @@
-//
-//  fareSnapTests.swift
-//  fareSnapTests
-//
-//  Created by Alejandro De Jesus on 11/11/2024.
-//
-
 import XCTest
-@testable import fareSnap
+import Combine
+import MapKit
+@testable import fareSnap 
 
-final class fareSnapTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class MockLocationManager: LocationManagerProtocol {
+    @Published private(set) var userLocation: CLLocationCoordinate2D?
+    
+    var userLocationPublisher: AnyPublisher<CLLocationCoordinate2D?, Never> {
+        $userLocation.eraseToAnyPublisher()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func requestPermission() {}
+    func startUpdatingLocation() {}
+    
+    func simulateLocationUpdate(_ location: CLLocationCoordinate2D) {
+        userLocation = location
     }
+}
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+class ContentViewModelTests: XCTestCase {
+    var sut: ContentViewModel!
+    var mockLocationManager: MockLocationManager!
+    
+    override func setUp() {
+        super.setUp()
+        mockLocationManager = MockLocationManager()
+        sut = ContentViewModel(locationManager: mockLocationManager)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    override func tearDown() {
+        sut = nil
+        mockLocationManager = nil
+        super.tearDown()
+    }
+    
+    func testInitialization() {
+        XCTAssertNotNil(sut)
+        XCTAssertEqual(sut.userLocation.latitude, 34.011_286, accuracy: 0.000001)
+        XCTAssertEqual(sut.userLocation.longitude, -116.166_868, accuracy: 0.000001)
+    }
+    
+    func testUserLocationUpdate() {
+        let expectation = XCTestExpectation(description: "User location update")
+        
+        let newLocation = CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060)
+        
+        let cancellable = sut.$userLocation.sink { location in
+            if location.latitude == newLocation.latitude && location.longitude == newLocation.longitude {
+                expectation.fulfill()
+            }
         }
+        
+        mockLocationManager.simulateLocationUpdate(newLocation)
+        
+        wait(for: [expectation], timeout: 1.0)
+        cancellable.cancel()
     }
+    
+
 
 }
+

@@ -1,16 +1,12 @@
-//
-//  ContentViewModel.swift
-//  fareSnap
-//
-//  Created by Alejandro De Jesus on 05/12/2024.
-//
-
 import Foundation
-import MapKit
 import _MapKit_SwiftUI
 import Combine
+import MapKit
 
 class ContentViewModel: ObservableObject {
+    private var cancellables = Set<AnyCancellable>()
+    private var locationManager: LocationManagerProtocol
+    
     @Published var userLocation = CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868)
     @Published var cameraPosition: MapCameraPosition = .region(
         MKCoordinateRegion(
@@ -19,16 +15,15 @@ class ContentViewModel: ObservableObject {
         )
     )
     
-    private var locationManager: LocationManager
-    
-    init(locationManager: LocationManager) {
+    init(locationManager: LocationManagerProtocol) {
         self.locationManager = locationManager
         self.locationManager.requestPermission()
         self.locationManager.startUpdatingLocation()
         
-        self.locationManager.$userLocation
+        self.locationManager.userLocationPublisher
+            .compactMap { $0 }
             .sink { [weak self] newLocation in
-                guard let self = self, let newLocation = newLocation else { return }
+                guard let self = self else { return }
                 self.userLocation = newLocation
                 self.updateCameraPosition(for: newLocation)
             }
@@ -43,6 +38,5 @@ class ContentViewModel: ObservableObject {
             )
         )
     }
-    
-    private var cancellables = Set<AnyCancellable>()
 }
+

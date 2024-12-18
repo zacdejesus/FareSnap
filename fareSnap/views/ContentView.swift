@@ -10,29 +10,26 @@ import SwiftData
 import MapKit
 
 struct ContentView: View {
+    
     @StateObject private var viewModel: ContentViewModel
+    @State private var showSheet = true
     
     init(viewModel: ContentViewModel = ContentViewModel(locationManager: LocationManager())) {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
     
-    @State private var showSheet = true
-    
     var body: some View {
         ZStack {
             Map(position: $viewModel.cameraPosition) {
-                Marker("You", coordinate: viewModel.userLocation)
+                Marker("", coordinate: viewModel.userLocation)
             }
             .ignoresSafeArea()
             
             .sheet(isPresented: $showSheet) {
-                SheetView()
+                RideDestinationInputView()
                     .interactiveDismissDisabled(true)
                     .presentationDetents([.medium, .height(300)])
             }
-        }
-        .onAppear {
-            // Any additional setup if needed
         }
     }
 }
