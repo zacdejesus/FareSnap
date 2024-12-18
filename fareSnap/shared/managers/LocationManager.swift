@@ -4,11 +4,24 @@
 //
 //  Created by Alejandro De Jesus on 05/12/2024.
 //
-
 import Foundation
+import Combine
 import CoreLocation
 
-class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+protocol LocationManagerProtocol: AnyObject {
+    var userLocation: CLLocationCoordinate2D? { get }
+    var userLocationPublisher: AnyPublisher<CLLocationCoordinate2D?, Never> { get }
+    func requestPermission()
+    func startUpdatingLocation()
+}
+
+
+
+class LocationManager: NSObject, LocationManagerProtocol, ObservableObject, CLLocationManagerDelegate {
+    var userLocationPublisher: AnyPublisher<CLLocationCoordinate2D?, Never> {
+        $userLocation.eraseToAnyPublisher()
+    }
+    
     private let locationManager = CLLocationManager()
     
     @Published var userLocation: CLLocationCoordinate2D?

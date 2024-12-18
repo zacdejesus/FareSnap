@@ -14,6 +14,8 @@
 		CB3BCAD42D01FFAD009C13FB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAD32D01FFAD009C13FB /* LocationManager.swift */; };
 		CB3BCAD72D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAD62D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift */; };
 		CB3BCADA2D0207FF009C13FB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAD92D0207FF009C13FB /* ContentViewModel.swift */; };
+		CB408CD52D08D2A500D76BF6 /* FareEstimateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB408CD42D08D2A500D76BF6 /* FareEstimateResponse.swift */; };
+		CB408CD72D08D9C200D76BF6 /* RideRequestButtonSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB408CD62D08D9C200D76BF6 /* RideRequestButtonSwiftUI.swift */; };
 		CB5709882CE29E6700428A9B /* fareSnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709872CE29E6700428A9B /* fareSnapApp.swift */; };
 		CB57098A2CE29E6700428A9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709892CE29E6700428A9B /* ContentView.swift */; };
 		CB57098E2CE29E6700428A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57098D2CE29E6700428A9B /* Assets.xcassets */; };
@@ -21,9 +23,8 @@
 		CB57099B2CE29E6800428A9B /* fareSnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57099A2CE29E6800428A9B /* fareSnapTests.swift */; };
 		CB5709A52CE29E6800428A9B /* fareSnapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709A42CE29E6800428A9B /* fareSnapUITests.swift */; };
 		CB5709A72CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5709A62CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift */; };
-		CB9EACA12CE2A13700BBB7AE /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */; };
-		CB9EACA32CE2A55B00BBB7AE /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */; };
-		CBB35A0F2CFE9B47008E67EB /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB35A0E2CFE9B47008E67EB /* SheetView.swift */; };
+		CB6836952D13836900F7DBBD /* RideRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6836942D13836900F7DBBD /* RideRequestViewModel.swift */; };
+		CBB35A0F2CFE9B47008E67EB /* RideDestinationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB35A0E2CFE9B47008E67EB /* RideDestinationInputView.swift */; };
 		CBB35A112CFEA6F9008E67EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB35A102CFEA6F9008E67EB /* AppDelegate.swift */; };
 		CE345BC49654E68671CD1683 /* Pods_fareSnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEB9FF542598A5D31E138B6 /* Pods_fareSnap.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,8 @@
 		CB3BCAD32D01FFAD009C13FB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		CB3BCAD62D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+extensions.swift"; sourceTree = "<group>"; };
 		CB3BCAD92D0207FF009C13FB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CB408CD42D08D2A500D76BF6 /* FareEstimateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareEstimateResponse.swift; sourceTree = "<group>"; };
+		CB408CD62D08D9C200D76BF6 /* RideRequestButtonSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestButtonSwiftUI.swift; sourceTree = "<group>"; };
 		CB5709842CE29E6700428A9B /* fareSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fareSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5709872CE29E6700428A9B /* fareSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapApp.swift; sourceTree = "<group>"; };
 		CB5709892CE29E6700428A9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,9 +71,8 @@
 		CB5709A02CE29E6800428A9B /* fareSnapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fareSnapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5709A42CE29E6800428A9B /* fareSnapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapUITests.swift; sourceTree = "<group>"; };
 		CB5709A62CE29E6800428A9B /* fareSnapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fareSnapUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
-		CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
-		CBB35A0E2CFE9B47008E67EB /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		CB6836942D13836900F7DBBD /* RideRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestViewModel.swift; sourceTree = "<group>"; };
+		CBB35A0E2CFE9B47008E67EB /* RideDestinationInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDestinationInputView.swift; sourceTree = "<group>"; };
 		CBB35A102CFEA6F9008E67EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D70DEB56BCB51C5F5822C022 /* Pods_fareSnap_fareSnapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fareSnap_fareSnapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0846C59E7CA28802922A84 /* Pods-fareSnap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fareSnap.debug.xcconfig"; path = "Target Support Files/Pods-fareSnap/Pods-fareSnap.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +139,35 @@
 			path = managers;
 			sourceTree = "<group>";
 		};
-		CB3BCAD52D0201CD009C13FB /* extensions */ = {
+		CB3BCAD52D0201CD009C13FB /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				CB408CDD2D0CA93300D76BF6 /* keys */,
+				CB3BCACF2D01FA67009C13FB /* managers */,
+				CB408CDC2D0CA8F500D76BF6 /* extensions */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		CB3BCAD82D0207EF009C13FB /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BCAD92D0207FF009C13FB /* ContentViewModel.swift */,
+				CB6836942D13836900F7DBBD /* RideRequestViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		CB408CD32D08D28300D76BF6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CB408CD42D08D2A500D76BF6 /* FareEstimateResponse.swift */,
+				CB3BCAD02D01FDD1009C13FB /* Item.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CB408CDC2D0CA8F500D76BF6 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
 				CB3BCAD62D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift */,
@@ -145,12 +175,11 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
-		CB3BCAD82D0207EF009C13FB /* viewModels */ = {
+		CB408CDD2D0CA93300D76BF6 /* keys */ = {
 			isa = PBXGroup;
 			children = (
-				CB3BCAD92D0207FF009C13FB /* ContentViewModel.swift */,
 			);
-			path = viewModels;
+			path = keys;
 			sourceTree = "<group>";
 		};
 		CB57097B2CE29E6700428A9B = {
@@ -178,19 +207,15 @@
 		CB5709862CE29E6700428A9B /* fareSnap */ = {
 			isa = PBXGroup;
 			children = (
-				CB3BCAD82D0207EF009C13FB /* viewModels */,
-				CB3BCAD22D01FF4F009C13FB /* Info.plist */,
-				CB3BCAD52D0201CD009C13FB /* extensions */,
-				CB3BCACF2D01FA67009C13FB /* managers */,
+				CB408CD32D08D28300D76BF6 /* models */,
 				CBB35A0D2CFE9B36008E67EB /* views */,
-				CB9EACA22CE2A55B00BBB7AE /* APIKeys.plist */,
+				CB3BCAD82D0207EF009C13FB /* viewModels */,
+				CB3BCAD52D0201CD009C13FB /* shared */,
 				CB5709872CE29E6700428A9B /* fareSnapApp.swift */,
-				CB5709892CE29E6700428A9B /* ContentView.swift */,
-				CB3BCAD02D01FDD1009C13FB /* Item.swift */,
 				CB57098D2CE29E6700428A9B /* Assets.xcassets */,
 				CB57098F2CE29E6700428A9B /* Preview Content */,
-				CB9EACA02CE2A13700BBB7AE /* GoogleMapView.swift */,
 				CBB35A102CFEA6F9008E67EB /* AppDelegate.swift */,
+				CB3BCAD22D01FF4F009C13FB /* Info.plist */,
 			);
 			path = fareSnap;
 			sourceTree = "<group>";
@@ -223,7 +248,9 @@
 		CBB35A0D2CFE9B36008E67EB /* views */ = {
 			isa = PBXGroup;
 			children = (
-				CBB35A0E2CFE9B47008E67EB /* SheetView.swift */,
+				CB5709892CE29E6700428A9B /* ContentView.swift */,
+				CBB35A0E2CFE9B47008E67EB /* RideDestinationInputView.swift */,
+				CB408CD62D08D9C200D76BF6 /* RideRequestButtonSwiftUI.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -337,7 +364,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9EACA32CE2A55B00BBB7AE /* APIKeys.plist in Resources */,
 				CB5709912CE29E6700428A9B /* Preview Assets.xcassets in Resources */,
 				CB57098E2CE29E6700428A9B /* Assets.xcassets in Resources */,
 			);
@@ -468,14 +494,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB35A112CFEA6F9008E67EB /* AppDelegate.swift in Sources */,
-				CB9EACA12CE2A13700BBB7AE /* GoogleMapView.swift in Sources */,
+				CB408CD72D08D9C200D76BF6 /* RideRequestButtonSwiftUI.swift in Sources */,
+				CB6836952D13836900F7DBBD /* RideRequestViewModel.swift in Sources */,
 				CB57098A2CE29E6700428A9B /* ContentView.swift in Sources */,
 				CB3BCACE2D01FA5F009C13FB /* APIKeysManager.swift in Sources */,
 				CB3BCADA2D0207FF009C13FB /* ContentViewModel.swift in Sources */,
 				CB3BCAD42D01FFAD009C13FB /* LocationManager.swift in Sources */,
 				CB3BCAD12D01FDD1009C13FB /* Item.swift in Sources */,
 				CB3BCAD72D0201E2009C13FB /* CLLocationCoordinate2D+extensions.swift in Sources */,
-				CBB35A0F2CFE9B47008E67EB /* SheetView.swift in Sources */,
+				CBB35A0F2CFE9B47008E67EB /* RideDestinationInputView.swift in Sources */,
+				CB408CD52D08D2A500D76BF6 /* FareEstimateResponse.swift in Sources */,
 				CB5709882CE29E6700428A9B /* fareSnapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -713,6 +741,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -734,6 +763,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -754,6 +784,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.fareSnapUITests;
@@ -773,6 +804,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZTBH29ZRG3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.fareSnapUITests;
